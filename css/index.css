@@ -128,9 +128,14 @@ form {
 }
 
 footer {
-    background-color: #eee;
+    background-color: var(--fifth-color);
+
+    h4, i {
+        color: var(--fourth-color);
+    }
 
     .foot {
+        border-top: 1px solid var(--primary-color);
         background-color: var(--fifth-color);
         text-align: center;
         padding-block: 15px;
@@ -141,7 +146,7 @@ footer {
     }
 
     img {
-        width: 100px;
+        width: 175px;
     }
 }
 
