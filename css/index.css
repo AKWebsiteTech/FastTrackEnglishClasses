@@ -218,3 +218,13 @@ footer {
         margin: auto 0;
     }
 }
+
+.differents {
+    text-align: center;
+
+    .col {
+        background-color: var(--primary-color);
+        padding: 20px;
+        border-radius: 10px;
+    }
+}
