@@ -14,3 +14,28 @@ navLinks.forEach(link => {
     link.classList.add("active");
   }
 });
+
+document.getElementById("contactForm").addEventListener("submit", async function (e) {
+  e.preventDefault();
+
+  const form = this;
+  const success = document.getElementById("successMessage");
+
+  try {
+    const response = await fetch(form.action, {
+      method: "POST",
+      body: new FormData(form),
+      headers: {
+        "Accept": "application/json"
+      }
+    });
+
+    if (response.ok) {
+      form.style.display = "none";
+      success.style.display = "block";
+      form.reset();
+    }
+  } catch (error) {
+    alert("Something went wrong. Please try again.");
+  }
+});

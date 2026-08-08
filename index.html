@@ -26,9 +26,9 @@
                 <nav id="menu">
                     <i class="fa-solid fa-xmark" id="off"></i>
                     <ul>
-                        <li><a href="/">Home</a></li>
-                        <li><a href="/about">About Us</a></li>
-                        <li><a href="/contact">Contact Us</a></li>
+                        <li><a href="./">Home</a></li>
+                        <li><a href="./about">About Us</a></li>
+                        <li><a href="./contact">Contact Us</a></li>
                     </ul>
                 </nav>
                 <div id="on">
@@ -167,7 +167,7 @@
             <div class="column">
                 <h3>Join us today</h3>
                 <p>Start your journey towards English fluency with FastTrack English Classes and unleash better business opportunities, greater confidence and powerful communication skills.</p>
-                <form action="https://formsubmit.co/englishfasttrackcourse@gmail.com" method="POST">
+                <form id="contactForm" action="https://formsubmit.co/englishfasttrackcourse@gmail.com" method="POST">
                     <input type="text" name="name" placeholder="Full Name" id="" required>
                     <div class="grid grid1" style="gap: 10px;">
                         <input type="email" name="email" placeholder="Email Address" id="" required>
@@ -176,6 +176,10 @@
                     <textarea name="message" placeholder="Write Your Message..." id=""></textarea>
                     <button type="submit">Submit</button>
                 </form>
+                <div id="successMessage" style="display: none;">
+                    <h3>Thank You!</h3>
+                    <p>We have received your message. We will get in touch with you soon.</p>
+                </div>
             </div>
         </div>
     </div>
@@ -188,8 +192,8 @@
                 </div>
                 <div class="column">
                     <h4>More Links</h4>
-                    <p><a href="/privacy">Privacy Policy</a></p>
-                    <p><a href="/terms">Terms & Conditions</a></p>
+                    <p><a href="./privacy">Privacy Policy</a></p>
+                    <p><a href="./terms">Terms & Conditions</a></p>
                 </div>
                 <div class="column">
                     <h4>Get in Touch</h4>

@@ -228,3 +228,16 @@ footer {
         border-radius: 10px;
     }
 }
+
+#successMessage {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+#successMessage h3 {
+    margin-bottom: 10px;
+}
+
+#successMessage p {
+    margin: 0;
+}
