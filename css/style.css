@@ -1,6 +1,6 @@
 /* Global CSS Starts Here*/
 @import url('https://fonts.googleapis.com/css2?family=Roboto');
-@import url('https://fonts.googleapis.com/css2?family=Red+Rose');
+@import url('https://fonts.googleapis.com/css2?family=Inter');
 
 * {
     margin: 0;
@@ -20,7 +20,7 @@ body {
     --fourth-color: #ffffff;
     --fifth-color: #141414;
     /*fonts*/
-    --primary-font: "Red Rose";
+    --primary-font: Inter;
     --secondary-font: Roboto;
 }
 
@@ -78,7 +78,7 @@ a:hover {
 }
 
 h1 {
-    font-size: 3.25em;
+    font-size: 3.4em;
     color: var(--fourth-color);
 }
 

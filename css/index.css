@@ -1,8 +1,8 @@
 @import url(./style.css);
 
 header {
-    background-color: var(--fifth-color);
-    position: sticky;
+    /* background-color: var(--fifth-color); */
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
@@ -57,8 +57,8 @@ header {
 
     nav ul li a.active,
     a:hover {
-        color: var(--third-color) !important;
-        border-color: var(--third-color);
+        color: var(--secondary-color) !important;
+        border-color: var(--secondary-color);
     }
 
     #off {
@@ -98,21 +98,26 @@ form {
 }
 
 .banner {
-    background-image: url(../images/banner.jpg);
+    background-image: linear-gradient(to bottom, rgba(20, 20, 20, 0.5), rgba(20, 20, 20, 0.5)), url(../images/MainBanner.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    text-align: center;
+    height: 100vh;
+    display: flex;
 
     p {
         color: var(--fourth-color);
-        font-size: 19px;
-        font-weight: 800;
-        letter-spacing: 2px;
+        font-size: 18px;
+        font-weight: 700;
     }
 
-    h1, p {
-        text-shadow: 0 5px 5px rgba(20, 20, 20, 0.6);
+    h1,
+    p {
+        text-shadow: 0 3px 5px rgba(20, 20, 20, 0.6);
+    }
+
+    .fa-check {
+        color: red;
     }
 }
 
@@ -130,7 +135,8 @@ form {
 footer {
     background-color: var(--fifth-color);
 
-    h4, i {
+    h4,
+    i {
         color: var(--fourth-color);
     }
 
@@ -168,42 +174,62 @@ footer {
 
 .usps {
     text-align: center;
-    background-color: rgb(255, 205, 252, 0.25);
 
     .col {
-        padding: 20px;
-        border-radius: 10px;
-        border: 2px solid var(--primary-color);
+        padding: 30px;
+        border-radius: 2px;
+        border: 1.5px solid var(--primary-color);
+    }
+
+    .col:first-child {
+        border-right: 0;
+        background-color: var(--secondary-color);
+        border-color: var(--secondary-color);
+        h2 {
+            color: var(--fourth-color);
+text-align: left;
+        }
     }
 
     img {
-        width: 100px;
+        width: 75px;
         margin-bottom: 15px;
     }
 }
 
 .course {
-    text-align: center;
+    background-image: linear-gradient(to bottom, rgba(20, 20, 20, 0.8), rgba(20, 20, 20, 0.8)), url(../images/bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 
-    h3 {
-        background-color: var(--primary-color);
-        padding: 15px;
-        border-radius: 10px 10px 0 0;
-    }
-    
-    p {
-        border: 2px solid var(--primary-color);
-        padding: 15px;
-        /* background-color: var(--secondary-color); */
-        /* color: var(--fourth-color); */
-        line-height: 1.7;
-        border-radius: 0 0 10px 10px;
+    .Ccard {
+        padding: 20px 30px;
+        background-color: rgba(255, 255, 255, 0.7);
     }
 
-    h2 {
+    .chead {
         width: fit-content;
-        margin: auto;
         border-bottom: 4px solid var(--secondary-color);
+        color: var(--primary-color);
+    }
+
+    .grid {
+        gap: 20px;
+    }
+
+    .fa-1,
+    .fa-2,
+    .fa-3,
+    .fa-4 {
+        color: #fff;
+        padding: 10px 15px;
+        border-radius: 100%;
+        background-color: var(--fifth-color);
+    }
+
+    p {
+        line-height: 1.7;
     }
 }
 
@@ -216,6 +242,26 @@ footer {
 
     .column {
         margin: auto 0;
+    }
+
+    .flex {
+        border-radius: 5px;
+        background-color: var(--primary-color);
+
+        p:last-child {
+            padding: 7px 15px;
+        }
+    }
+
+    .grid {
+        gap: 10px;
+    }
+
+    i {
+        background-color: var(--secondary-color);
+        color: var(--fourth-color);
+        padding: 15px;
+        border-radius: 5px 0 0 5px;
     }
 }
 
@@ -240,4 +286,48 @@ footer {
 
 #successMessage p {
     margin: 0;
+}
+
+.cards {
+    img {
+        width: 75px;
+    }
+
+    .column {
+        background-color: var(--third-color);
+        padding: 30px;
+        text-align: center;
+    }
+
+    p {
+        line-height: 1.2;
+        color: var(--fourth-color);
+        font-size: 24px;
+        font-weight: 700;
+        font-family: var(--primary-font);
+    }
+
+    .row {
+        margin-top: -60px;
+        padding-block: 0;
+    }
+}
+
+.intro {
+    hr {
+        margin-block: 10px 20px;
+        width: 100px;
+        border: 2px solid var(--secondary-color);
+    }
+}
+
+header.scrolled {
+    background-color: var(--fifth-color);
+}
+
+.socialicons {
+    background-color: var(--primary-color);
+    padding: 15px;
+    font-size: 2em;
+    border-radius: 100%;
 }
